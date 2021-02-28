@@ -1,0 +1,36 @@
+<template>
+	<div class="wrap">
+		<div class="preloader-wrapper active">
+			<div class="spinner-layer" :class="color">
+				<div class="circle-clipper left">
+					<div class="circle"></div>
+				</div>
+				<div class="gap-patch">
+					<div class="circle"></div>
+				</div>
+				<div class="circle-clipper right">
+					<div class="circle"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<script>
+export default {
+	computed: {
+		color() {
+			const colors = ['spinner-red-only', 'spinner-blue-only', 'spinner-green-only', 'spinner-yellow-only']
+			return colors[Math.floor(Math.random() * 4)]
+		}
+	}
+};
+</script>
+
+<style lang="scss">
+	.wrap {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+</style>
