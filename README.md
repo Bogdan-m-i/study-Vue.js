@@ -1,5 +1,7 @@
 # crm
 
+https://vue-crm-92a26.web.app/
+
 ## Project setup
 ```
 npm install
